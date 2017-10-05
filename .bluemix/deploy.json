@@ -31,7 +31,7 @@
             "type": "string",
             "pattern": "\\S"
         },
-       "registry-region": {
+       "registry-rgn": {
           "description": "The bluemix region for image registry",
           "type": "string"
         },
@@ -58,7 +58,7 @@
             "pattern": "\\S"
         }
     },
-    "required": ["app-name", "api-key", "registry-region", "registry-namespace", "prod-region", "prod-cluster-name", "prod-cluster-namespace", "prod-organization", "prod-space"],
+    "required": ["app-name", "api-key", "registry-rgn", "registry-namespace", "prod-region", "prod-cluster-name", "prod-cluster-namespace", "prod-organization", "prod-space"],
     "form": [
        {
           "type": "validator",
@@ -73,7 +73,7 @@
         },{
           "type": "select",
           "title": "Image Registry Region",
-          "key": "registry-region"
+          "key": "registry-rgn"
         },{
           "type": "text",
           "readonly": false,
